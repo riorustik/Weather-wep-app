@@ -55,7 +55,13 @@ searchBox.addEventListener('keypress', (e) => {
     if(e.key === 'Enter') {
         getWeather(searchBox.value);
     }
-
 });
+
+document.addEventListener('click', (e) => {
+    if(card.classList.contains('active') && !card.contains(e.target)) {
+        card.classList.remove('active');
+        card.style.height = '230px';
+    }
+})
 
 showDate();
