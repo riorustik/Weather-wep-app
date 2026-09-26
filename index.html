@@ -7,37 +7,45 @@
     <title>Weather</title>
     <link rel="stylesheet"
           href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
 <div class="card">
     <h1 class="card__title">Weather</h1>
     <p class="card__date">
-        Today,<span id="date"></span>
+        Today, <span id="date"></span>
     </p>
     <div class="card__search">
-        <input type="text" class="card__search" placeholder="Enter City Name">
-        <button id="searchBtn" class="card__search">
+        <input type="text"
+               class="card__input"
+               placeholder="Enter City Name">
+        <button id="searchBtn"
+                class="card__btn">
             <i class="fas fa-search"></i>
         </button>
     </div>
     <div class="card__weather">
-        <h2 class="card__title card__title--city">Saratov</h2>
+        <h2 id="city" class="card__title card__title--city"></h2>
         <div class="card__content">
-            <h2 class="card__title card__title--temp">22</h2>
-            <img src="" alt="weather-icon" class="card__weather-icon">
+            <h2 class="card__title card__title--temp"></h2>
+            <img src=""
+                 alt="weather-icon"
+                 class="card__weather-icon">
         </div>
     </div>
     <div class="card__details">
         <div class="card__col">
             <i class="fa-solid fa-wind"></i>
             <p>Wind</p>
-            <p id="wind" class="card__info">15 m/s</p>
+            <p id="wind"
+               class="card__info"></p>
         </div>
         <div class="card__col">
             <i class="fa-solid fa-droplet"></i>
             <p>Hum</p>
-            <p id="humidity" class="card__info">50 %</p>
+            <p id="humidity"
+               class="card__info"></p>
         </div>
     </div>
 </div>
